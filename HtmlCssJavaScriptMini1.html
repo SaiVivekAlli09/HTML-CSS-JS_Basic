@@ -1,0 +1,60 @@
+
+<link rel="stylesheet" href="index.css">
+<div class="home_page">
+  <h2>Sai Vivek Wholesale Dealers<br/>
+    <center>Product Search</center>
+  </h2>
+  <br/>
+  
+  <form name="labform" id="for_reset" onsubmit="return inputValidation()" action="backend.php" method="post" >
+    <div class="display_usr">
+      <input type="text" name="product" id="product" >
+      <label>Product Name<i>(substring)</i></label>
+    </div>
+    <div class="display_usr">
+      <input type="text" name="warehouse" id="warehouse" >
+      <label>Warehouse City(substring)</label>
+    </div>
+
+    <table>
+      
+      <tr>
+        <td>
+            <div class="display_usr">
+            <input type="number" step="0.01" name="minquantity" id="minquantity" >
+            <label>Minimum Quantity</label>
+            </div>
+        </td>
+        <td>
+            <div class="display_usr">
+            <input type="number" step="0.01" name="maxquantity" id="maxquantity">
+            <label>Maximum Quantity</label>
+            </div>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>
+            <div class="display_usr">
+            <input type="number" step="0.01" name="minprice" id="minprice" >
+            <label>Minimum Price</label>
+            </div>
+        </td>
+        <td>
+            <div class="display_usr">
+            <input type="number" step="0.01" name="maxprice" id=="maxprice">
+            <label>Maximum Price</label>
+            </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="reset">Clear Form</buttton>
+        </td>
+        <td>
+          <button type="submit" onsubmit="inputValidation()">Search Products</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
